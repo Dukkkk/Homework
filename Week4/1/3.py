@@ -58,6 +58,6 @@ for i in range(1, 61):
      driver.back()
 
 df = pd.DataFrame(datalist)
-df.to_csv("C:/git/Homework/Week4/Data/scraped_data.csv",   index=False, encoding='utf-8-sig')
+df.to_csv("C:/git/Homework/Week4/Data/scraped_data_full_page.csv",   index=False, encoding='utf-8-sig')
 
 

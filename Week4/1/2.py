@@ -9,7 +9,7 @@ url = "https://www.unegui.mn/adv/10040044_maral-aialal-khotkhon-47m2-2-oroo/"
 driver = Driver(uc=True, headless=False)
 driver.uc_open_with_reconnect(url, 4)
 driver.uc_gui_click_captcha()
-   
+
 
 data = {}
 data["Title"] = driver.find_element(By.XPATH, "/html/body/div[3]/div[3]/div/section[1]/div/div[2]/div[1]/div[1]/h1").text

@@ -45,4 +45,6 @@ col_names = {
      
 df.columns = df.columns.str.strip()
 df.rename(columns=col_names, inplace=True)
-print(df.isna().sum())
+df.duplicated(subset=['ID', 'Date', 'Time'])
+df = df.drop_duplicates(subset=['ID', 'Date', 'Time'], keep='first')
+df = 
